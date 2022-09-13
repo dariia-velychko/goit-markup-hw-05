@@ -104,10 +104,10 @@ position: relative;
 }
 
 .link-nav.current::after{
-content: "";
-display: flex;
-
 position: absolute;
+content: "";
+display: block;
+
 
 width: 100%;
 height: 4px;
@@ -662,7 +662,7 @@ position: relative;
 
 .work-type-description {
 position: absolute;
-transform: translateY(-100%);
+transform: translateY(101%);
 display: flex;
 align-items: center;
 justify-content: center;
@@ -681,16 +681,17 @@ border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* .work-type-description.is-hidden {
+.work-type-description.is-hidden {
 opacity: 0;
 pointer-events: none;
 visibility: hidden;
 }
 
-.portfolio-cards:hover.work-type-description {
+.portfolio-link:hover.work-type-description {
+    transform: translateY(0);
     opacity: 1;
     
-} */
+}
 
 /* MODAL WINDOW */
 
